@@ -72,8 +72,8 @@ RadioGroup.propTypes = {
   options: PropTypes.array.isRequired,
   values: PropTypes.array,
   defaultSelected: PropTypes.oneOfType([
-    React.PropTypes.string,
-    React.PropTypes.number,
+    PropTypes.string,
+    PropTypes.number,
   ]),
   style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   textStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),

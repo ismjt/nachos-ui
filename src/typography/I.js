@@ -1,3 +1,1 @@
-import Em from './Em'
-
-export default Em
+Object.defineProperty(exports,"__esModule",{value:true});var _Em=require('./Em');var _Em2=_interopRequireDefault(_Em);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_Em2.default;module.exports=exports['default'];

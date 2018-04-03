@@ -1,3 +1,1 @@
-import Strong from './Strong'
-
-export default Strong
+Object.defineProperty(exports,"__esModule",{value:true});var _Strong=require('./Strong');var _Strong2=_interopRequireDefault(_Strong);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_Strong2.default;module.exports=exports['default'];
