@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import PropTypes from 'prop-types'
 import SegmentedControlButton from './SegmentedControlButton'
 import themeManager from './themeManager'
 

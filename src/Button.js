@@ -203,8 +203,8 @@ theme:PropTypes.object,
 onChange:PropTypes.func,
 selected:PropTypes.bool,
 value:PropTypes.oneOfType([
-_react2.default.PropTypes.number,
-_react2.default.PropTypes.string])};
+PropTypes.number,
+PropTypes.string])};
 
 
 

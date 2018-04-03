@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import PropTypes from 'prop-types'
 import { View, TouchableOpacity } from 'react-native'
 import Switcher from './Switcher'
 import Radio from './Radio'

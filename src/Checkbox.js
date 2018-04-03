@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import PropTypes from 'prop-types'
 import { View, TouchableOpacity, Platform } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
 import themeManager from './themeManager'
