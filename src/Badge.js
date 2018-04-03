@@ -1,73 +1,73 @@
-import React, { PropTypes } from 'react'
-import { Text, View } from 'react-native'
-import themeManager from './themeManager'
+Object.defineProperty(exports,"__esModule",{value:true});var _react=require('react');var _react2=_interopRequireDefault(_react);var PropTypes=require('prop-types');
+var _reactNative=require('react-native');
+var _themeManager=require('./themeManager');var _themeManager2=_interopRequireDefault(_themeManager);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
 
-const defaultTheme = {
-  BADGE_BACKGROUND: '#444',
-  BADGE_BORDER_RADIUS: 20,
-  BADGE_FONT_COLOR: '#fff',
-  BADGE_PADDING_VERTICAL: 4,
-  BADGE_PADDING_HORIZONTAL: 10,
-  BADGE_FONT_SIZE: 12,
-}
+var defaultTheme={
+BADGE_BACKGROUND:'#444',
+BADGE_BORDER_RADIUS:20,
+BADGE_FONT_COLOR:'#fff',
+BADGE_PADDING_VERTICAL:4,
+BADGE_PADDING_HORIZONTAL:10,
+BADGE_FONT_SIZE:12};
 
-themeManager.setSource('Badge', () => defaultTheme)
 
-const defaultStyle = (theme) => {
-  return {
-    container: {
-      flexDirection: 'row',
-    },
-    base: {
-      padding: theme.BADGE_PADDING_HORIZONTAL,
-      paddingVertical: theme.BADGE_PADDING_VERTICAL,
-      backgroundColor: theme.BADGE_BACKGROUND,
-      borderRadius: theme.BADGE_BORDER_RADIUS,
-    },
-    text: {
-      fontSize: theme.BADGE_FONT_SIZE,
-      color: theme.BADGE_FONT_COLOR,
-    },
-  }
-}
+_themeManager2.default.setSource('Badge',function(){return defaultTheme;});
 
-const Badge = (props) => {
-  const {
-    color,
-    style,
-    textStyle,
-    value,
-  } = props
+var defaultStyle=function defaultStyle(theme){
+return{
+container:{
+flexDirection:'row'},
 
-  const theme = props.theme || themeManager.getStyle('Badge')
-  const baseStyle = defaultStyle(theme)
+base:{
+padding:theme.BADGE_PADDING_HORIZONTAL,
+paddingVertical:theme.BADGE_PADDING_VERTICAL,
+backgroundColor:theme.BADGE_BACKGROUND,
+borderRadius:theme.BADGE_BORDER_RADIUS},
 
-  return (
-    <View style={baseStyle.container}>
-      <View
-        style={[
-          baseStyle.base,
-          color ? { backgroundColor: color } : {},
-          style,
-        ]}
-      >
-        <Text style={[baseStyle.text, textStyle]}>
-          {value}
-        </Text>
-      </View>
-    </View>
-  )
-}
+text:{
+fontSize:theme.BADGE_FONT_SIZE,
+color:theme.BADGE_FONT_COLOR}};
 
-Badge.propTypes = {
-  color: PropTypes.string,
-  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
-  textStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
-  value: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]).isRequired,
-  theme: PropTypes.object,
-}
 
-export default Badge
+};
+
+var Badge=function Badge(props){var
+
+color=
+
+
+
+props.color,style=props.style,textStyle=props.textStyle,value=props.value;
+
+var theme=props.theme||_themeManager2.default.getStyle('Badge');
+var baseStyle=defaultStyle(theme);
+
+return(
+_react2.default.createElement(_reactNative.View,{style:baseStyle.container},
+_react2.default.createElement(_reactNative.View,{
+style:[
+baseStyle.base,
+color?{backgroundColor:color}:{},
+style]},
+
+
+_react2.default.createElement(_reactNative.Text,{style:[baseStyle.text,textStyle]},
+value))));
+
+
+
+
+};
+
+Badge.propTypes={
+color:PropTypes.string,
+style:PropTypes.oneOfType([PropTypes.object,PropTypes.array]),
+textStyle:PropTypes.oneOfType([PropTypes.object,PropTypes.array]),
+value:PropTypes.oneOfType([
+PropTypes.string,
+PropTypes.number]).
+isRequired,
+theme:PropTypes.object};exports.default=
+
+
+Badge;module.exports=exports['default'];
